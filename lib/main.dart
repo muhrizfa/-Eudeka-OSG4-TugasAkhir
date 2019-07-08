@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:tugasakhir_eudeka/home.dart';
+import 'dart:convert';
+
+
+final appTitle = 'Yu-Gi-Oh! Card Deck';
 
 void main() => runApp(MyApp());
 
@@ -7,38 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Yu-Gi-Oh!',
+      title: appTitle,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
       ),
-      home: MyHomePage(title: 'Yu-Gi-Oh! Card Deck'),
+      home: MyHomePage(title: appTitle),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title),
-          centerTitle: true,
-        ),
-        body:
-            null // This trailing comma makes auto-formatting nicer for build methods.
-        );
-  }
-}
 
 // import 'dart:convert';
 // import 'package:flutter/material.dart';
