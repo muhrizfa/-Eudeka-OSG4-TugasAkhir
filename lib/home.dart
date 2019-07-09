@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:tugasakhir_eudeka/listview.dart';
 import 'package:tugasakhir_eudeka/model.dart';
 import 'package:http/http.dart' as http;
-import 'package:tugasakhir_eudeka/model.dart';
 import 'model.dart';
 import 'dart:async';
 
